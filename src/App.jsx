@@ -20,7 +20,7 @@ const App = () => {
       {/* Optional: Add overlay or other content here */}
     </header>
     <div style={{textAlign: 'center', fontFamily: 'sans-serif'}}>
-      <h1>Hiiiiii</h1>
+      <h1>Hiiiiii Boii</h1>
     </div>
     </>
   );
