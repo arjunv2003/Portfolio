@@ -69,7 +69,7 @@ const Contact = () => {
           <h3 className="text-xl font-semibold mb-6 text-gray-800">My Address</h3>
           <p className="flex items-center gap-3 text-gray-700">
             <FaMapMarkerAlt className="text-[#695aa6] text-xl" />
-            Kutagulla, kadiri, 
+            Kutagulla, kadiri,AndhraPradesh, India.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-4 text-gray-800">Social Profiles</h3>
@@ -86,6 +86,10 @@ const Contact = () => {
           <p className="flex items-center gap-3 text-gray-700">
             <FaEnvelope className="text-[#695aa6] text-xl" />
             arjunkanthvenkatagiri@gmail.com
+          </p>
+          <p className="flex items-center gap-3 text-gray-700">
+            <FaEnvelope className="text-[#695aa6] text-xl" />
+            20cs01065@iitbbs.ac.in
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-4 text-gray-800">Phone</h3>
