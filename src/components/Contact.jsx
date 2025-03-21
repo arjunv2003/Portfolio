@@ -37,7 +37,7 @@ const Contact = () => {
         "6HsKRrdixTzXsJlg4"  // Replace with your EmailJS Public Key
       )
       .then(() => {
-        setMessageStatus("Message sent successfully!");
+        setMessageStatus("Message delivered successfully!");
         setFormData({ user_name: "", user_email: "", message: "" }); // Clear form
       })
       .catch(() => setMessageStatus("Failed to send message. Try again."))
