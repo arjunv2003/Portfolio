@@ -1,5 +1,8 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaXTwitter, FaYoutube, FaWhatsapp, FaTelegram } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedin,FaFreeCodeCamp } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { SiGeeksforgeeks } from "react-icons/si";
+
 
 const Footer = () => {
   return (
@@ -8,9 +11,9 @@ const Footer = () => {
       <div className="absolute top-0 left-0 w-full h-16 bg-[#0b132b] clip-wave"></div>
 
       {/* Name */}
-      <h2 className="text-lg md:text-2xl font-bold text-purple-400 relative z-10">
-        Arjun Kanth
-      </h2>
+      <h2 className="text-4xl font-bold text-[#695aa6] mb-4" style={{ fontFamily: '"Indie Flower", cursive' }}>
+      Arjun Kanth
+        </h2>
 
       {/* Navigation Links */}
       <ul className="flex justify-center gap-6 md:gap-10 mt-2 text-white text-sm md:text-base relative z-10">
@@ -30,13 +33,16 @@ const Footer = () => {
 
       {/* Social Media Icons */}
       <div className="flex justify-center gap-4 mt-6 text-gray-400 text-2xl relative z-10">
-        <a href="https://facebook.com" className="hover:text-purple-400 transition"><FaFacebook /></a>
-        <a href="https://instagram.com" className="hover:text-purple-400 transition"><FaInstagram /></a>
-        <a href="https://linkedin.com" className="hover:text-purple-400 transition"><FaLinkedin /></a>
-        <a href="https://twitter.com" className="hover:text-purple-400 transition"><FaXTwitter /></a>
-        <a href="https://youtube.com" className="hover:text-purple-400 transition"><FaYoutube /></a>
-        <a href="https://whatsapp.com" className="hover:text-purple-400 transition"><FaWhatsapp /></a>
-        <a href="https://telegram.org" className="hover:text-purple-400 transition"><FaTelegram /></a>
+        
+             <a href="https://www.linkedin.com/in/arjun-kanth-venkatagiri-7aba47241/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={30} color="#0077B5" />
+            </a>
+            <a href="https://www.geeksforgeeks.org/user/20cs01065/" target="_blank" rel="noopener noreferrer">
+              <SiGeeksforgeeks size={30} color="#008000" />
+            </a>
+            <a href="https://github.com/arjunv2003" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={30}  />
+            </a>
       </div>
 
       {/* Copyright */}

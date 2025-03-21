@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { X } from "lucide-react";
-
+import resume from "../assets/Resume/Arjun_SWE.pdf";
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -96,7 +96,7 @@ function Navbar() {
                 gap: "20px",
               }}
             >
-              {["About", "Experience", "Education", "Projects", "Skills", "Contact", "Cv"].map(
+              {/* {["About", "Experience", "Education", "Projects", "Skills", "Contact", "Cv"].map(
                 (item, index) => (
                   <li
                     key={index}
@@ -111,7 +111,42 @@ function Navbar() {
                     <a href={`#${item.toLowerCase()}`}>{item}</a>
                   </li>
                 )
-              )}
+              )} */}
+
+<ul className="nav-links" style={{ display: "flex", gap: "20px" }}>
+  {["About", "Experience", "Education", "Projects", "Skills", "Contact"].map(
+    (item, index) => (
+      <li
+        key={index}
+        style={{
+          opacity: itemsVisible[index] ? 1 : 0,
+          transform: itemsVisible[index] ? "translateY(0px)" : "translateY(-10px)",
+          transition: "opacity 0.3s ease, transform 0.3s ease",
+          fontFamily: '"Indie Flower", cursive',
+          fontSize: "20px",
+        }}
+      >
+        <a href={`#${item.toLowerCase()}`}>{item}</a>
+      </li>
+    )
+  )}
+  
+  {/* CV Link with Animation */}
+  <li
+    style={{
+      opacity: itemsVisible[6] ? 1 : 0,  // Applying animation at the same timing
+      transform: itemsVisible[6] ? "translateY(0px)" : "translateY(-10px)",
+      transition: "opacity 0.3s ease, transform 0.3s ease",
+      fontFamily: '"Indie Flower", cursive',
+      fontSize: "20px",
+    }}
+  >
+    <a href={resume} target="_blank" rel="noopener noreferrer">
+      CV
+    </a>
+  </li>
+</ul>
+
             </ul>
           )}
 
@@ -156,8 +191,8 @@ function Navbar() {
             padding: "10px 20px",
             transition: "transform 0.3s ease-in-out",
           }}
-        >
-          {["About", "Experience", "Education", "Projects", "Skills", "Contact", "Cv"].map(
+         >
+          {/* {["About", "Experience", "Education", "Projects", "Skills", "Contact", "Cv"].map(
             (item, index) => (
               <a
                 key={index}
@@ -176,7 +211,46 @@ function Navbar() {
               </a>
             )
           )}
-        </div>
+        </div> */}
+
+
+   {["About", "Experience", "Education", "Projects", "Skills", "Contact"].map((item, index) => (
+    <a
+      key={index}
+      href={`#${item.toLowerCase()}`}
+      style={{
+        padding: "10px",
+        opacity: itemsVisible[index] ? 1 : 0,
+        transform: itemsVisible[index] ? "translateY(0px)" : "translateY(-10px)",
+        transition: "opacity 0.3s ease, transform 0.3s ease",
+        fontFamily: '"Indie Flower", cursive',
+        fontSize: "20px",
+        borderBottom: "1px solid rgba(0,0,0,0.1)",
+      }}
+    >
+      {item}
+    </a>
+  ))}
+
+  {/* CV Link with Animation */}
+  <a
+    href={resume}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      padding: "10px",
+      opacity: itemsVisible[6] ? 1 : 0,
+      transform: itemsVisible[6] ? "translateY(0px)" : "translateY(-10px)",
+      transition: "opacity 0.3s ease, transform 0.3s ease",
+      fontFamily: '"Indie Flower", cursive',
+      fontSize: "20px",
+      borderBottom: "1px solid rgba(0,0,0,0.1)",
+    }}
+  >
+    CV
+  </a>
+</div>
+
       )}
 
       {/* Responsive Styles */}

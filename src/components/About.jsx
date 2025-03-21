@@ -1,5 +1,6 @@
 import React from "react";
 import myImg from "../assets/myImg.png"
+import myResume from "../assets/Resume/Arjun_SWE.pdf"
 const About = () => {
   return (
     <div id="about" className="flex flex-col lg:flex-row items-center lg:items-start justify-center px-6 sm:px-10 py-16 max-w-6xl mx-auto">
@@ -28,9 +29,12 @@ const About = () => {
           explicabo voluptatibus! Nemo esse similique, voluptates labore
           distinctio, placeat explicabo facilis molestias.
         </p>
-        <button className="px-6 py-2 border-2 border-[#695aa6] text-[#695aa6] rounded-lg hover:bg-[#695aa6] hover:text-white transition duration-300">
-          Download CV
-        </button>
+        <a href={myResume} download="Arjun_Resume.pdf">
+  <button className="px-6 py-2 border-2 border-[#695aa6] text-[#695aa6] rounded-lg hover:bg-[#695aa6] hover:text-white transition duration-300">
+    Download CV
+  </button>
+</a>
+
       </div>
     </div>
   );

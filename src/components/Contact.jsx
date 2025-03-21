@@ -48,10 +48,13 @@ const Contact = () => {
     <section id="contact" className="py-16 px-6 bg-white text-gray-900 relative">
       {/* Title */}
       <div className="text-center mb-6">
-        <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wide">
-          Want to get in Touch?
+        <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wide text-center">
+        Want to get in Touch?
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#695aa6] mb-2">
+        <h2
+          className="text-3xl md:text-4xl font-bold text-[#695aa6] mb-8 text-center"
+          style={{ fontFamily: '"Indie Flower", cursive' }}
+        >
           Contact Me
         </h2>
       </div>
@@ -74,10 +77,10 @@ const Contact = () => {
 
           <h3 className="text-xl font-semibold mt-6 mb-4 text-gray-800">Social Profiles</h3>
           <div className="flex gap-4">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/arjun-kanth-venkatagiri-7aba47241/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-[#0077b5] text-2xl hover:scale-110 transition" />
             </a>
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/arjunv2003" target="_blank" rel="noopener noreferrer">
               <FaGithub className="text-black text-2xl hover:scale-110 transition" />
             </a>
           </div>

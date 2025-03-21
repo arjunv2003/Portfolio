@@ -13,9 +13,9 @@ const skills = [
   { name: "SQL", icon: <FaDatabase />, color: "#336791" }, // Dark Blue
   { name: "MsSQL", icon: <FaDatabase />, color: "#CC2927" }, // Red
   { name: "Python", icon: <FaPython />, color: "#3776AB" }, // Blue
-  { name: ".NET Core", icon: <FaLaptopCode />, color: "#512BD4" }, // Purple
-  { name: ".NET MVC", icon: <FaLaptopCode />, color: "#512BD4" }, // Purple
-  { name: "Entity Framework Core", icon: <FaLaptopCode />, color: "#512BD4" }, // Purple
+  { name: ".NET Framework", icon: <FaLaptopCode />, color: "#512BD4" }, // Purple
+  // { name: ".NET MVC", icon: <FaLaptopCode />, color: "#512BD4" }, // Purple
+  // { name: "Entity Framework Core", icon: <FaLaptopCode />, color: "#512BD4" }, // Purple
   { name: "ReactJS", icon: <FaReact />, color: "#61DAFB" }, // Light Blue
   { name: "React Native", icon: <FaReact />, color: "#61DAFB" }, // Light Blue
   { name: "AWS Cloud", icon: <FaAws />, color: "#FF9900" }, // Orange
