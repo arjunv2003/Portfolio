@@ -61,7 +61,7 @@ const Experience = () => {
 
   return (
     <>
-      <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wide text-center">
+      <p id="experience" className="text-gray-500 text-xs md:text-sm uppercase tracking-wide text-center">
         What I Do ?
       </p>
       <h2

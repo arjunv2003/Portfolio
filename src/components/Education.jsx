@@ -35,7 +35,7 @@ const Education = () => {
   return (
     <>
     
-      <div className="mt-10 md:mt-16 px-4 md:px-16">
+      <div id="education" className="mt-10 md:mt-16 px-4 md:px-16">
         {/* Section Header */}
         <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wide text-center">
           What I Studied?
