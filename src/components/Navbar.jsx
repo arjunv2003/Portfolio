@@ -229,10 +229,6 @@ function Navbar() {
     </a>
   </div>
 )}
-
-
-      
-
       {/* Responsive Styles */}
       <style>
         {`
