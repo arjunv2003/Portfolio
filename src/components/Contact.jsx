@@ -115,44 +115,44 @@ const Contact = () => {
           <h3 className="text-xl font-semibold mb-6 text-gray-800">Send Me a Message</h3>
 
           <div className="mb-4">
-            <label className="block text-gray-700">Your Name</label>
+            <label className="block text-gray-700 font-bold">Your Name</label>
             <input 
               type="text" 
               name="user_name" 
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#695aa6]" 
+              className="w-full p-3 rounded-md border border-[#695aa6] focus:outline-none focus:ring-2 focus:ring-[#695aa6]" 
             />
             {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700">Your Email</label>
+            <label className="block text-gray-700 font-bold">Your Email</label>
             <input 
               type="email" 
               name="user_email" 
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#695aa6]" 
+              className="w-full p-3 rounded-md border border-[#695aa6] focus:outline-none focus:ring-2 focus:ring-[#695aa6]" 
             />
             {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
 
           <div className="mb-4">
-            <label className="block text-gray-700">Your Message</label>
+            <label className="block text-gray-700 font-bold">Your Message</label>
             <textarea 
               name="message" 
               rows="4" 
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#695aa6]" 
+              className="w-full p-3 rounded-md border border-[#695aa6] focus:outline-none focus:ring-2 focus:ring-[#695aa6]" 
             ></textarea>
             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
 
           <button 
             type="submit" 
-            className={`w-full py-3 rounded-md transition ${loading ? "bg-gray-500 cursor-not-allowed" : "bg-[#695aa6] hover:bg-[#483d8b]"}`}
+            className={`w-full py-3 rounded-md transition ${loading ? "bg-gray-500 cursor-not-allowed" : "bg-white hover:bg-[#695aa6] border border-[#695aa6] text-[#695aa6] hover:text-white font-bold"}`}
             disabled={loading}
           >
             {loading ? "Sending..." : "Send Message"}
