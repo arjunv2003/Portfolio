@@ -1,5 +1,19 @@
 import React from "react";
-import { FaCode, FaLaptopCode, FaToolbox, FaDatabase, FaCloud, FaGithub, FaGitAlt, FaReact, FaPython, FaAws, FaGoogle, FaServer } from "react-icons/fa";
+import {
+  FaCode,
+  FaLaptopCode,
+  FaDatabase,
+  FaCloud,
+  FaGithub,
+  FaGitAlt,
+  FaReact,
+  FaPython,
+  FaAws,
+  FaGoogle,
+  FaServer,
+  FaNode,
+} from "react-icons/fa";
+import { SiExpress, SiMongodb, SiPostman } from "react-icons/si";
 import { motion } from "framer-motion";
 
 // Skills Data with Colors
@@ -24,13 +38,21 @@ const skills = [
   { name: "Git", icon: <FaGitAlt />, color: "#F05032" }, // Orange-Red
   { name: "Google Colab", icon: <FaCloud />, color: "#F4B400" }, // Yellow
   { name: "SSMS", icon: <FaServer />, color: "#CC2927" }, // Red
+  { name: "NodeJS", icon: <FaNode />, color: "#8CC84B" }, // Green
+  { name: "ExpressJS", icon: <SiExpress />, color: "#000000" }, // Black
+  { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" }, // Green
+  { name: "Postman", icon: <SiPostman />, color: "#FF6C37" }, // Orange
 ];
 
 const Skills = () => {
   return (
-    <section id = "skills"className="py-10 px-6 bg-white text-gray-900"> {/* Adjusted padding */}
+    <section id="skills" className="py-10 px-6 bg-white text-gray-900">
+      {" "}
+      {/* Adjusted padding */}
       {/* Title */}
-      <div className="text-center mb-6"> {/* Reduced bottom margin */}
+      <div className="text-center mb-6">
+        {" "}
+        {/* Reduced bottom margin */}
         <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wide text-center">
           What I’m Good At?
         </p>
@@ -41,7 +63,6 @@ const Skills = () => {
           My Skills
         </h2>
       </div>
-
       {/* Skills List */}
       <div className="flex flex-wrap justify-center gap-5 text-lg">
         {skills.map((skill, index) => (
