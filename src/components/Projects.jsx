@@ -71,7 +71,7 @@ const projects = [
     description: "A QR code generator using Python for correct redirection.",
     tech: ["Python"],
     type: "SDE Project",
-    github: "",
+    github: "https://github.com/arjunv2003/QrCode",
     image: Qr,
     details:
       "A QR code generator built with Python. It allows users to create QR codes that redirect to specific URLs By getting Device type (Android,IOS,Pc). The project demonstrates the use of libraries for QR code generation. Useful for marketting single qr for ios and app store redirection.",
