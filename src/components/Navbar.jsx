@@ -113,40 +113,51 @@ function Navbar() {
                 )
               )} */}
 
-<ul className="nav-links" style={{ display: "flex", gap: "20px" }}>
-  {["About", "Experience", "Education", "Projects", "Skills", "Contact"].map(
-    (item, index) => (
-      <li
-        key={index}
-        style={{
-          opacity: itemsVisible[index] ? 1 : 0,
-          transform: itemsVisible[index] ? "translateY(0px)" : "translateY(-10px)",
-          transition: "opacity 0.3s ease, transform 0.3s ease",
-          fontFamily: '"Indie Flower", cursive',
-          fontSize: "20px",
-        }}
-      >
-        <a href={`#${item.toLowerCase()}`}>{item}</a>
-      </li>
-    )
-  )}
-  
-  {/* CV Link with Animation */}
-  <li
-    style={{
-      opacity: itemsVisible[6] ? 1 : 0,  // Applying animation at the same timing
-      transform: itemsVisible[6] ? "translateY(0px)" : "translateY(-10px)",
-      transition: "opacity 0.3s ease, transform 0.3s ease",
-      fontFamily: '"Indie Flower", cursive',
-      fontSize: "20px",
-    }}
-  >
-    <a href={resume} target="_blank" rel="noopener noreferrer">
-      CV
-    </a>
-  </li>
-</ul>
+              <ul
+                className="nav-links"
+                style={{ display: "flex", gap: "20px" }}
+              >
+                {[
+                  "About",
+                  "Experience",
+                  "Education",
+                  "Projects",
+                  "Skills",
+                  "Contact",
+                ].map((item, index) => (
+                  <li
+                    key={index}
+                    style={{
+                      opacity: itemsVisible[index] ? 1 : 0,
+                      transform: itemsVisible[index]
+                        ? "translateY(0px)"
+                        : "translateY(-10px)",
+                      transition: "opacity 0.3s ease, transform 0.3s ease",
+                      fontFamily: '"Indie Flower", cursive',
+                      fontSize: "20px",
+                    }}
+                  >
+                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                  </li>
+                ))}
 
+                {/* CV Link with Animation */}
+                <li
+                  style={{
+                    opacity: itemsVisible[6] ? 1 : 0, // Applying animation at the same timing
+                    transform: itemsVisible[6]
+                      ? "translateY(0px)"
+                      : "translateY(-10px)",
+                    transition: "opacity 0.3s ease, transform 0.3s ease",
+                    fontFamily: '"Indie Flower", cursive',
+                    fontSize: "20px",
+                  }}
+                >
+                  <a href={resume} target="_blank" rel="noopener noreferrer">
+                    CV
+                  </a>
+                </li>
+              </ul>
             </ul>
           )}
 
@@ -174,61 +185,72 @@ function Navbar() {
           </button>
         </div>
       </div>
-     {/* Mobile Dropdown Menu */}
-{menuOpen && (
-  <div
-    className="mobile-menu"
-    style={{
-      position: "absolute",
-      top: "100%",
-      left: 0,
-      width: "100%",
-      backgroundImage: 'linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%)',
-      boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-      display: "none", // Hidden by default (shown only on small screens)
-      flexDirection: "column",
-      padding: "10px 20px",
-      backdropFilter: "blur(10px)",
-      transition: "transform 0.3s ease-in-out",
-    }}
-  >
-    {["About", "Experience", "Education", "Projects", "Skills", "Contact"].map((item, index) => (
-      <a
-        key={index}
-        href={`#${item.toLowerCase()}`}
-        style={{
-          padding: "10px",
-          opacity: itemsVisible[index] ? 1 : 0,
-          transform: itemsVisible[index] ? "translateY(0px)" : "translateY(-10px)",
-          transition: "opacity 0.3s ease, transform 0.3s ease",
-          fontFamily: '"Indie Flower", cursive',
-          fontSize: "20px",
-          borderBottom: "1px solid rgba(0,0,0,0.1)",
-        }}
-      >
-        {item}
-      </a>
-    ))}
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div
+          className="mobile-menu"
+          style={{
+            position: "absolute",
+            top: "100%",
+            left: 0,
+            width: "100%",
+            // backgroundImage: 'linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%)',
+            boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
+            display: "none", // Hidden by default (shown only on small screens)
+            flexDirection: "column",
+            padding: "10px 20px",
+            backdropFilter: "blur(10px)",
+            transition: "transform 0.3s ease-in-out",
+          }}
+        >
+          {[
+            "About",
+            "Experience",
+            "Education",
+            "Projects",
+            "Skills",
+            "Contact",
+          ].map((item, index) => (
+            <a
+              key={index}
+              href={`#${item.toLowerCase()}`}
+              style={{
+                padding: "10px",
+                opacity: itemsVisible[index] ? 1 : 0,
+                transform: itemsVisible[index]
+                  ? "translateY(0px)"
+                  : "translateY(-10px)",
+                transition: "opacity 0.3s ease, transform 0.3s ease",
+                fontFamily: '"Indie Flower", cursive',
+                fontSize: "20px",
+                borderBottom: "1px solid rgba(0,0,0,0.1)",
+              }}
+            >
+              {item}
+            </a>
+          ))}
 
-    {/* CV Link with Animation */}
-    <a
-      href={resume}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{
-        padding: "10px",
-        opacity: itemsVisible[6] ? 1 : 0,
-        transform: itemsVisible[6] ? "translateY(0px)" : "translateY(-10px)",
-        transition: "opacity 0.3s ease, transform 0.3s ease",
-        fontFamily: '"Indie Flower", cursive',
-        fontSize: "20px",
-        borderBottom: "1px solid rgba(0,0,0,0.1)",
-      }}
-    >
-      CV
-    </a>
-  </div>
-)}
+          {/* CV Link with Animation */}
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: "10px",
+              opacity: itemsVisible[6] ? 1 : 0,
+              transform: itemsVisible[6]
+                ? "translateY(0px)"
+                : "translateY(-10px)",
+              transition: "opacity 0.3s ease, transform 0.3s ease",
+              fontFamily: '"Indie Flower", cursive',
+              fontSize: "20px",
+              borderBottom: "1px solid rgba(0,0,0,0.1)",
+            }}
+          >
+            CV
+          </a>
+        </div>
+      )}
       {/* Responsive Styles */}
       <style>
         {`
