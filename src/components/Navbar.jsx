@@ -254,7 +254,7 @@ function Navbar() {
       {/* Responsive Styles */}
       <style>
         {`
-          @media (max-width: 768px) {
+          @media (max-width: 1023px) {
             .desktop-nav .nav-links {
               display: none !important;
             }
