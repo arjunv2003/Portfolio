@@ -20,6 +20,7 @@ const experiences = [
           "Designed credit-based system for employers to post jobs.",
           "Improved UI/UX, making the platform more user-friendly.",
           "Contributed to the development of the mobile app for both Android and iOS.",
+          "Designed a data management solution for tracking CV distribution, including S3 storage, unique link generation, and database updates to record client downloads, providing client access to company information.",
         ],
       },
       {
