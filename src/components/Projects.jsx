@@ -7,6 +7,7 @@ import Railway from "../assets/Projects/Railway.jpeg";
 import Portfolio from "../assets/Projects/Portfolio.png";
 import Gpu from "../assets/Projects/Gpu.png";
 import Qr from "../assets/Projects/Qr.webp";
+import chatBot from "../assets/Projects/Medical_chatbot.png";
 // Sample Project Data
 const projects = [
   {
@@ -75,6 +76,18 @@ const projects = [
     image: Qr,
     details:
       "A QR code generator built with Python. It allows users to create QR codes that redirect to specific URLs By getting Device type (Android,IOS,Pc). The project demonstrates the use of libraries for QR code generation. Useful for marketting single qr for ios and app store redirection.",
+  },
+  {
+    id: 7,
+    name: "AI Medical ChatBot",
+    description:
+      "AI-powered end to end chatbot for medical queries and information.",
+    tech: ["Python", "Multi Modal LLM's", "Gradio", ""],
+    type: "ML",
+    github: "https://github.com/arjunv2003/Ai-Medical-ChatBot",
+    image: chatBot,
+    details:
+      "An AI-powered medical chatbot that provides information and answers to medical queries. Built using Python and multi-modal LLMs, it offers a user-friendly interface for easy interaction.",
   },
 ];
 
