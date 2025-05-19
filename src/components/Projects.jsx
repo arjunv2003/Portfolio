@@ -82,12 +82,12 @@ const projects = [
     name: "AI Medical ChatBot",
     description:
       "AI-powered end to end chatbot for medical queries and information.",
-    tech: ["Python", "Multi Modal LLM's", "Gradio", ""],
+    tech: ["Python", "Multi Modal LLM's", "Audio & Vision"],
     type: "ML",
     github: "https://github.com/arjunv2003/Ai-Medical-ChatBot",
     image: chatBot,
     details:
-      "An AI-powered medical chatbot that provides information and answers to medical queries. Built using Python and multi-modal LLMs, it offers a user-friendly interface for easy interaction.",
+      "An AI-powered medical chatbot that has speech to text and text to speech capabilities. Built using Python and multi-modal LLMs, it offers a user-friendly interface for easy interaction.",
   },
 ];
 
